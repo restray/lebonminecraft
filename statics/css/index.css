@@ -12,6 +12,11 @@
     margin-top: calc( 50vh - ( 56px / 2 ));
 }
 
+.desc{
+    min-height: 50vh;
+    box-shadow: 0px -0.25px 10px 0px black;
+}
+
 .desc .child{
     margin-top: 25vh;
     transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
