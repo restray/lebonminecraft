@@ -4,11 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <title>LeBonMinecraft</title>
+
+    <!-- SEO -->
+    <meta name="author" content="Charles Boitel">
+    <meta name="description" content="Si la connaissance n’était plus un critère pour se lancer ? Notre objectif est de permettre à chacun de pouvoir lancer son serveur minecraft en seulement quelques clics ! En passant par la configuration de vos serveurs Minecraft hébergés sur vos vps / dédié à sa gestion complète, notre panel est ce que vous recherchez !">
+    <link rel="canonical" href="/">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.lebonminecraft.com/" />
+    <meta property="og:title" content="LeBonMinecraft" />
+    <meta property="og:description" content="LeBonMinecraft est un panel d’administration centralisé qui va vous permettre d’installer et de gérer votre serveur minecraft en seulement quelques clics">
+
+    <!-- RESPONSIVE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FAVICON -->
+    <link rel="icon" href="statics/img/favicon.ico" />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="statics/css/bootstrap.min.css">
     <link rel="stylesheet" href="statics/css/index.css">
-    <title>Lebonminecraft - Accueil</title>
 </head>
 <body>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110537269-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-110537269-1');
+    </script>
     <div class="container-fluid">
         <header>
             <div class="row header">
@@ -35,6 +62,12 @@
                         <input type="email" name="email" placeholder="Email" id=""><br>
                         <input type="submit" value="Envoyer">
                     </form>
+                    <div class="alert">
+                        <p style="color: #BD4097; margin-top: 0%;">Une erreur est survenu !</p>
+                    </div>
+                    <div class="alert">
+                        <p style="color: #BD4097; margin-top: 0%;">Vous êtes inscrit à la newsletter !</p>
+                    </div>
                 </div>
             </div>
             <hr>
