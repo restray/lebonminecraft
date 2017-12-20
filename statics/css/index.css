@@ -94,3 +94,20 @@
     margin-top: 20px;
     outline: none;
 }
+
+section ul{
+    list-style-type: none;
+}
+
+section ul li{
+    display: inline-block;
+    padding: 0 0.5em;
+}
+
+section #copyright{
+    position: absolute;
+    right: 0;
+    line-height: 20px;
+    font-size: 10px;
+    font-family: "Avenir Roman", sans-serif;
+}
