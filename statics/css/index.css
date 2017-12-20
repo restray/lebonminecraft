@@ -1,25 +1,46 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+@font-face {
+ font-family: "Avenir Heavy";
+ src: url("../fonts/AvenirLTStd-Heavy.otf") format("opentype");
+}
+
+@font-face {
+ font-family: "Avenir Roman";
+ src: url("../fonts/AvenirLTStd-Roman.otf") format("opentype");
+}
+
+@font-face {
+ font-family: "Avenir Light";
+ src: url("../fonts/AvenirLTStd-Light.otf") format("opentype");
+}
 
 .header{
     text-align: center;
-    background-image: linear-gradient(145deg, rgba(189, 64, 151, 0.9), rgba(118, 96, 237, 0.9));
+    background-image: url(../img/background-header.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
 }
 
-.header .text img{
-    height: 56px;
-    width: 228px;
-    margin-top: calc( 50vh - ( 56px / 2 ));
+.text{
+    color: #FFF;
+    font-size: 16px;
+    margin-top: 50vh;
+    transform: translateY(-50%);
 }
 
-.desc{
-    min-height: 50vh;
-    box-shadow: 0px -0.25px 10px 0px black;
+.text h1{
+    font-family: "Avenir Heavy", sans-serif;
 }
 
-.desc .child{
-    margin-top: 25vh;
-    transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+.text p{
+    font-family: "Avenir Roman", sans-serif;
+    opacity: 0.8;
+}
+
+.header img{
+    position: absolute;
+    top: 2vh;
+    left: 2vh;
 }
 
 .contact{
@@ -28,15 +49,33 @@
 }
 
 .contact .child{
-    margin-top: 25vh;
-    transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+    margin-top: 10vh;
+    transform: translateY(-10%); /* tiré de la moitié de sa propre hauteur */
+}
+
+.contact .child p{
+    text-align: center;
+    color: #95989A;
+}
+
+.contact img{
+    margin-left: 25vw;
+    transform: translateX(-50%);
+}
+
+@media only screen and (max-width : 768px) { 
+    .contact img{
+        display: none;
+    }
+    .contact .child{
+        margin-top: 5vh;
+    }
 }
 
 .contact form input[type=email]{
     border: none;
     border-bottom: grey 0.5px solid;
     width: 50%;
-    font-family: 'Nunito Sans', sans-serif;
     outline: none;
 }
 .contact form input[type=email]:hover{
@@ -47,7 +86,6 @@
 
 .contact form input[type=submit]{
     border-radius: 50px;
-    font-family: 'Nunito Sans', sans-serif;
     border: 1.5px solid #BD4097;
     background-color: transparent;
     width: 160px;
